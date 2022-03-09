@@ -143,7 +143,13 @@ img.add_border {
 <p><em>w1<br/></em>在IPV4下的網路流量無法滿足全教室的學生使用，必須切換成IPV6才足夠<br/>將老師設定的啟動檔以.bat形式執行<br/><a href="https://github.com/mdecourse/wcm2022/discussions/2">CADLab 中的 IPv6 網路設定 · Discussion #2 · mdecourse/wcm2022 · GitHub<br/></a>以訪指惡意病毒向外傳輸數據<br/><br/></p>
 <p><em>w2</em></p>
 <p>學校電腦因主控在老師的電腦，無法使用"管理員執行".bat，使上述的執行檔無法完全使用</p>
-<p><em></em></p><br />Rep create << <a href='Rep create.html'>Previous</a> <a href='Student Group.html'>Next</a> >> Student Group</div>
+<p><em>w3</em></p>
+<p>NX1980 .bat檔在IPV6下需要加入PROXY指令</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set HTTP_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128
+set HTTPS_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128</pre>
+<p><br/><br/>並且在連上主機端需要使用"::37"主機</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set SPLM_LICENSE_SERVER=28000@[2001:288:6004:17::37]</pre>
+<p></p><br />Rep create << <a href='Rep create.html'>Previous</a> <a href='Student Group.html'>Next</a> >> Student Group</div>
         
     <!-- footer -->
       <div class="container">
