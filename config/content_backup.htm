@@ -2,8 +2,20 @@
 <p>本學期主要使用軟體:<br/>NX1980<br/>-&gt;參考與下載網址:<a href="https://mde.tw/cd2022/content/NX1980.html">cd2022 (mde.tw)</a> (只允許使用校用帳戶或是連線至主機下載)</p>
 <p>Github倉儲</p>
 <p>-&gt;mdecourse cmsimde:<a href="https://github.com/mdecourse/cmsimde" itemprop="name codeRepository">cmsimde</a><span> </span></p>
-<h1>AGX REPO </h1>
-<h1>Rep create</h1>
+<h1>AGX REPO</h1>
+<p>在fork的倉儲下，各組員pull requests組員能自行更新到原始倉儲檔案<br/>1.新建一個自己倉儲下連接原倉儲的分支</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git remote add (uptream name) (repo url.git)
+</pre>
+<p>(新增後可查詢自己分支細節)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git remote -v
+</pre>
+<p><br/>2.拉取原倉up-to-date檔案(到自己設的分倉支)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git fetch (upstream name)</pre>
+<p>3.拉下來後，再將分支內容覆蓋至自己的原分支</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git merge (upstream name)
+</pre>
+<p></p>
+<p>上述步驟做完後就是以原倉儲上的內容進行更改<br/>改完上傳github後，進行pull request至原倉儲做合併</p><h1>Rep create</h1>
 <p>參考資料<br/>cmsimde rep:<br/><a href="https://github.com/mdecourse/cmsimde">mdecourse/cmsimde: cmsimde main scripts (github.com)</a></p>
 <p>參考步驟:<br/><a href="http://mde.tw/cd2022_guide/content/index.html">CD_Guide (mde.tw)</a><br/><br/></p>
 <p>Step:<br/>1.Create a "cd2022" rep on github</p>
