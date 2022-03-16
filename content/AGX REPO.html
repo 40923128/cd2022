@@ -139,18 +139,20 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Rep create << <a href='Rep create.html'>Previous</a> <a href='Student Group.html'>Next</a> >> Student Group<br /><h1>Week problem</h1>
-<p><em>w1<br/></em>在IPV4下的網路流量無法滿足全教室的學生使用，必須切換成IPV6才足夠<br/>將老師設定的啟動檔以.bat形式執行<br/><a href="https://github.com/mdecourse/wcm2022/discussions/2">CADLab 中的 IPv6 網路設定 · Discussion #2 · mdecourse/wcm2022 · GitHub<br/></a>以訪指惡意病毒向外傳輸數據<br/><br/></p>
-<p><em>w2</em></p>
-<p>學校電腦因主控在老師的電腦，無法使用"管理員執行".bat，使上述的執行檔無法完全使用</p>
-<p><em>w3</em></p>
-<p>NX1980 .bat檔在IPV6下需要加入PROXY指令</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set HTTP_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128
-set HTTPS_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128</pre>
-<p><br/><br/>並且在連上主機端需要使用"::37"主機</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set SPLM_LICENSE_SERVER=28000@[2001:288:6004:17::37]</pre>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Rep create.html'>Next</a> >> Rep create<br /><h1>AGX REPO</h1>
+<p>在fork的倉儲下，各組員pull requests組員能自行更新到原始倉儲檔案<br/>1.新建一個自己倉儲下連接原倉儲的分支</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git remote add (uptream name) (repo url.git)
+</pre>
+<p>(新增後可查詢自己分支細節)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git remote -v
+</pre>
+<p><br/>2.拉取原倉up-to-date檔案(到自己設的分倉支)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git fetch (upstream name)</pre>
+<p>3.拉下來後，再將分支內容覆蓋至自己的原分支</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git merge (upstream name)
+</pre>
 <p></p>
-<br />Rep create << <a href='Rep create.html'>Previous</a> <a href='Student Group.html'>Next</a> >> Student Group</div>
+<p>上述步驟做完後就是以原倉儲上的內容進行更改<br/>改完上傳github後，進行pull request至原倉儲做合併</p><br />About << <a href='About.html'>Previous</a> <a href='Rep create.html'>Next</a> >> Rep create</div>
         
     <!-- footer -->
       <div class="container">
