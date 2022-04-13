@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2022-04-13T08:57:37-00:00</lastmod>
+<lastmod>2022-04-13T09:22:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2022-04-13T08:57:37-00:00</lastmod>
+<lastmod>2022-04-13T09:22:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2022-04-13T08:57:37-00:00</lastmod>
+<lastmod>2022-04-13T09:22:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2022-04-13T08:57:37-00:00</lastmod>
+<lastmod>2022-04-13T09:22:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./pages/about/</loc>
 <lastmod>2022-03-02T23:00:28+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./w7_summary.html</loc>
+<lastmod>2022-04-13T09:22:26+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -47,21 +54,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./w6_40923128.html.html</loc>
-<lastmod>2022-04-13T08:57:10+08:00</lastmod>
+<lastmod>2022-04-13T09:22:26+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./category/misc.html</loc>
-<lastmod>2022-04-13T08:57:10+08:06</lastmod>
+<lastmod>2022-04-13T09:22:26+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/cd2022.html</loc>
-<lastmod>2022-04-13T08:57:10+08:06</lastmod>
+<lastmod>2022-04-13T09:22:26+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -75,7 +82,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./author/40923128-lin-jun-yi.html</loc>
-<lastmod>2022-04-13T08:57:10+08:06</lastmod>
+<lastmod>2022-04-13T09:22:26+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

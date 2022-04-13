@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CMSimfly-40923128 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-13T08:57:10+08:00</updated><entry><title>About</title><link href="./about.html" rel="alternate"></link><published>2022-03-30T10:55:54+08:00</published><updated>2022-03-30T10:55:54+08:00</updated><author><name>40923128</name></author><id>tag:None,2022-03-30:./about.html</id><content type="html">&lt;h2&gt;CMSimfly 內容管理網誌&lt;/h2&gt;
-&lt;p&gt;課程倉儲: &lt;a href="https://github.com/40923128/cd2022/"&gt;https://github.com/40923128/cd2022/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;內容管理: &lt;a href="https://40923128.github.io/cd2022/"&gt;https://40923128.github.io/cd2022/ &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;課程投影片: &lt;a href="https://40923128.github.io/cd2022/reveal"&gt;https://40923128.github.io/cd2022/ &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;課程網誌: &lt;a href="https://40923128.github.io/cd2022/blog/"&gt;https://40923128.github.io/cd2022/blog/ &lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>2022 課程</title><link href="./w6_40923128.html.html" rel="alternate"></link><published>2022-03-30T10:23:00+08:00</published><updated>2022-04-13T08:57:10+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-03-30:./w6_40923128.html.html</id><summary type="html">&lt;p&gt;2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.&lt;/p&gt;
-
-
-&lt;h2&gt;雲端空間&lt;/h2&gt;
-&lt;p&gt;原本 Google Drive 教育版可以存放不限空間的政策, 2022.07 即將失效, 屆時每一個帳號下只能至多儲存 3GB 的資料. 取而代之的是 MicroSoft 提供的教育版 OneDrive, 每一名使用者可以&lt;a href="https://nfucc.nfu.edu.tw/?p=19287"&gt;存放&lt;/a&gt;至多 5TB 容量的檔案.&lt;/p&gt;
-&lt;h2&gt;協同主題&lt;/h2&gt;
-&lt;p&gt;2022cd 課程的主題為 &lt;a href="https://www.youtube.com/watch?v=OqPVK__z9Ek"&gt;uArm&lt;/a&gt;, 我們希望各分組組員採用 &lt;a href="https://solvespace.com/"&gt;Solvespace&lt;/a&gt;、&lt;a href="https://www.plm.automation.siemens.com/global/en/products/nx/"&gt;NX&lt;/a&gt; 以及 &lt;a href="https://www.onshape.com/en/"&gt;Onshape&lt;/a&gt; 設計繪製能夠用於 &lt;a href="https://mde.tw/cd2022_guide/content/Tic-Tat-Toe.html"&gt;Tic-Tat-Toe&lt;/a&gt; 遊戲的機械手臂.&lt;/p&gt;
-&lt;p&gt;從 uArm 中的影片與下載檔案、uArm Developer Guide、uArm test kit 與 uFactory uArm 可以取得與 uArm 機械手臂相關的技術資料.&lt;/p&gt;
-&lt;h2&gt;W7&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CMSimfly-40923128 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-13T09:22:26+08:00</updated><entry><title>2022 課程</title><link href="./w7_summary.html" rel="alternate"></link><published>2022-04-06T10:23:00+08:00</published><updated>2022-04-13T09:22:26+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-04-06:./w7_summary.html</id><summary type="html">&lt;h2&gt;W7&lt;/h2&gt;
+&lt;p&gt;1.git clone https://github.com/mdecourse/scarysim.git
+2.修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU
+3.cd scarysim
+4.qmake -o Makefile scarysim.pro
+5.mingw32-make -f Makefile.Release 可以在 release 目錄取得 scarysim.exe
+6.將scarysim.exe,ase.obj, arm1.obj, arm2.obj, arm3 …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;W7&lt;/h2&gt;
 &lt;p&gt;1.git clone https://github.com/mdecourse/scarysim.git
 2.修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU
 3.cd scarysim
@@ -20,4 +13,21 @@
 5.mingw32-make -f Makefile.Release 可以在 release 目錄取得 scarysim.exe
 6.將scarysim.exe,ase.obj, arm1.obj, arm2.obj, arm3.obj拉至coppeliasim410_msys2
 7.啟用scarysim.exe
-&lt;a href="https://40923128.github.io/cd2022/images/110-2W7.png"&gt;開啟後畫面&lt;/a&gt;&lt;/p&gt;</content><category term="Misc"></category><category term="cd2022"></category></entry></feed>
+&lt;a href="https://40923128.github.io/cd2022/images/110-2W7.png"&gt;開啟後畫面&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;新增BLOG分頁&lt;/h2&gt;
+&lt;p&gt;1.在leo內選擇一個md分支
+2.outline&amp;gt;copy_note
+3.貼上到要新增的位置
+就可以編輯&lt;/p&gt;</content><category term="Misc"></category><category term="cd2022"></category></entry><entry><title>About</title><link href="./about.html" rel="alternate"></link><published>2022-03-30T10:55:54+08:00</published><updated>2022-03-30T10:55:54+08:00</updated><author><name>40923128</name></author><id>tag:None,2022-03-30:./about.html</id><content type="html">&lt;h2&gt;CMSimfly 內容管理網誌&lt;/h2&gt;
+&lt;p&gt;課程倉儲: &lt;a href="https://github.com/40923128/cd2022/"&gt;https://github.com/40923128/cd2022/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;內容管理: &lt;a href="https://40923128.github.io/cd2022/"&gt;https://40923128.github.io/cd2022/ &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;課程投影片: &lt;a href="https://40923128.github.io/cd2022/reveal"&gt;https://40923128.github.io/cd2022/ &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;課程網誌: &lt;a href="https://40923128.github.io/cd2022/blog/"&gt;https://40923128.github.io/cd2022/blog/ &lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>2022 課程</title><link href="./w6_40923128.html.html" rel="alternate"></link><published>2022-03-30T10:23:00+08:00</published><updated>2022-04-13T09:22:26+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-03-30:./w6_40923128.html.html</id><summary type="html">&lt;p&gt;2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.&lt;/p&gt;
+
+
+&lt;h2&gt;雲端空間&lt;/h2&gt;
+&lt;p&gt;原本 Google Drive 教育版可以存放不限空間的政策, 2022.07 即將失效, 屆時每一個帳號下只能至多儲存 3GB 的資料. 取而代之的是 MicroSoft 提供的教育版 OneDrive, 每一名使用者可以&lt;a href="https://nfucc.nfu.edu.tw/?p=19287"&gt;存放&lt;/a&gt;至多 5TB 容量的檔案.&lt;/p&gt;
+&lt;h2&gt;協同主題&lt;/h2&gt;
+&lt;p&gt;2022cd 課程的主題為 &lt;a href="https://www.youtube.com/watch?v=OqPVK__z9Ek"&gt;uArm&lt;/a&gt;, 我們希望各分組組員採用 &lt;a href="https://solvespace.com/"&gt;Solvespace&lt;/a&gt;、&lt;a href="https://www.plm.automation.siemens.com/global/en/products/nx/"&gt;NX&lt;/a&gt; 以及 &lt;a href="https://www.onshape.com/en/"&gt;Onshape&lt;/a&gt; 設計繪製能夠用於 &lt;a href="https://mde.tw/cd2022_guide/content/Tic-Tat-Toe.html"&gt;Tic-Tat-Toe&lt;/a&gt; 遊戲的機械手臂.&lt;/p&gt;
+&lt;p&gt;從 uArm 中的影片與下載檔案、uArm Developer Guide、uArm test kit 與 uFactory uArm 可以取得與 uArm 機械手臂相關的技術資料.&lt;/p&gt;</content><category term="Misc"></category><category term="cd2022"></category></entry></feed>
