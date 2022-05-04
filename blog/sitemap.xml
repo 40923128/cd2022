@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2022-05-04T09:13:02-00:00</lastmod>
+<lastmod>2022-05-04T09:18:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2022-05-04T09:13:02-00:00</lastmod>
+<lastmod>2022-05-04T09:18:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2022-05-04T09:13:02-00:00</lastmod>
+<lastmod>2022-05-04T09:18:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2022-05-04T09:13:02-00:00</lastmod>
+<lastmod>2022-05-04T09:18:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -40,7 +40,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./w10_block_ui.html</loc>
-<lastmod>2022-05-01T14:05:00+08:00</lastmod>
+<lastmod>2022-05-04T09:18:36+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -68,14 +68,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/misc.html</loc>
-<lastmod>2022-05-01T14:05:00+08:06</lastmod>
+<lastmod>2022-05-04T09:18:36+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/cd2022.html</loc>
-<lastmod>2022-05-01T14:05:00+08:06</lastmod>
+<lastmod>2022-05-04T09:18:36+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -89,7 +89,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./author/40923128-lin-jun-yi.html</loc>
-<lastmod>2022-05-01T14:05:00+08:06</lastmod>
+<lastmod>2022-05-04T09:18:36+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
