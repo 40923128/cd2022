@@ -170,7 +170,7 @@ vertical: body pane on the botton</t>
     &lt;/a&gt;
     &lt;h3&gt;40923128 reveal&lt;/h3&gt;
     &lt;p&gt;
-        &lt;small&gt;個人倉儲: &lt;a href="https://40923128.github.io/cd2022/content/index.html"&gt; 40923128&lt;/a&gt; &lt;/small&gt;
+        &lt;small&gt;個人倉儲: &lt;a href="https://40923128.github.io/cd2022/content/"&gt; 40923128&lt;/a&gt; &lt;/small&gt;
     &lt;/p&gt;
 &lt;/section&gt;
 
