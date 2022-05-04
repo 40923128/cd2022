@@ -1,24 +1,3 @@
----
-Title: 2022 課程
-Date: 2022-5-1 10:23
-Category: Misc
-Tags: cd2022
-Slug:w10_block_ui
-Author: 40923128 林峻毅
----
-blockui
-----
-主要學習如何使用NXUI改變零件尺寸，配合python更改參數
-具體參考[w10_block_wink]、[個人操作檔案]
-[w10_block_wink]:https://40923128.github.io/cd2022/downloads/w10_block_ui.mp4
-[個人操作檔案]:https://drive.google.com/file/d/159vBG7LADoOkyi9QE4BbgQvud6cdSjzU/view?usp=sharing
-
-w10 wink整尺寸(百分比)
-----
-可開啟檔案原始碼觀看指令
-[原始指令]
-[原始指令]:https://40923125.github.io/cd2022/downloads/w10wink.py
-
 <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css">
 <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
 <script>
