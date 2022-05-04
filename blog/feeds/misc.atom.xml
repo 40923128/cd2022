@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CMSimfly-40923128 網際內容管理 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-05-04T09:52:18+08:00</updated><entry><title>2022 課程</title><link href="./w10_block_ui.html" rel="alternate"></link><published>2022-05-01T10:23:00+08:00</published><updated>2022-05-04T09:52:18+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-05-01:./w10_block_ui.html</id><content type="html">&lt;h2&gt;blockui&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CMSimfly-40923128 網際內容管理 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-05-04T10:02:30+08:00</updated><entry><title>2022 課程</title><link href="./w10_block_ui.html" rel="alternate"></link><published>2022-05-01T10:23:00+08:00</published><updated>2022-05-04T10:02:30+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-05-01:./w10_block_ui.html</id><content type="html">&lt;h2&gt;blockui&lt;/h2&gt;
 &lt;p&gt;主要學習如何使用NXUI改變零件尺寸，配合python更改參數
 具體參考&lt;a href="https://40923128.github.io/cd2022/downloads/w10_block_ui.mp4"&gt;w10_block_wink&lt;/a&gt;、&lt;a href="https://drive.google.com/file/d/159vBG7LADoOkyi9QE4BbgQvud6cdSjzU/view?usp=sharing"&gt;個人操作檔案&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;w10 wink整尺寸(百分比)&lt;/h2&gt;
@@ -18,7 +18,7 @@ var winkVideoData_w10_block_ui = {
 };
 &lt;/script&gt;
 &lt;div class="winkVideoContainerClass" style="border: thin solid black; padding: 10px;"&gt;&lt;video width="100%" height="100%" autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_w10_block_ui" muted="true"&gt;
-&lt;source src="https://40923125.github.io/cd2022/downloads/w10_block_ui.mp4" type="video/mp4" /&gt;&lt;/video&gt;&lt;/div&gt;</content><category term="Misc"></category><category term="cd2022"></category></entry><entry><title>2022 課程</title><link href="./w7_summary.html" rel="alternate"></link><published>2022-04-06T10:23:00+08:00</published><updated>2022-04-13T09:22:26+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-04-06:./w7_summary.html</id><summary type="html">&lt;h2&gt;W7&lt;/h2&gt;
+&lt;source src="https://40923128.github.io/cd2022/downloads/w10_block_ui.mp4" type="video/mp4" /&gt;&lt;/video&gt;&lt;/div&gt;</content><category term="Misc"></category><category term="cd2022"></category></entry><entry><title>2022 課程</title><link href="./w7_summary.html" rel="alternate"></link><published>2022-04-06T10:23:00+08:00</published><updated>2022-04-13T09:22:26+08:00</updated><author><name>40923128 林峻毅</name></author><id>tag:None,2022-04-06:./w7_summary.html</id><summary type="html">&lt;h2&gt;W7&lt;/h2&gt;
 &lt;p&gt;1.git clone https://github.com/mdecourse/scarysim.git
 2.修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU
 3.cd scarysim
