@@ -172,7 +172,7 @@ vertical: body pane on the botton</t>
 &lt;/div&gt;</t>
 <t tx="leo.20200818170328.1">&lt;section&gt;
     &lt;a href="https://github.com/40923128"&gt;
-        &lt;alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"&gt;
+        &lt;alt="40923128cd2022 logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"&gt;
     &lt;/a&gt;
     &lt;h3&gt;40923128 reveal&lt;/h3&gt;
     &lt;p&gt;
