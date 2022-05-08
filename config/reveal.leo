@@ -19,6 +19,7 @@
 <v t="leo.20200818170041.1"><vh>reveal div</vh>
 <v t="leo.20200818170222.1"><vh>slides div</vh>
 <v t="leo.20200818170328.1"><vh>slide 1</vh></v>
+<v t="leo.20220508132415.1"><vh>slide last</vh></v>
 </v>
 </v>
 </v>
@@ -175,5 +176,12 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
+<t tx="leo.20220508132415.1">&lt;section style="text-align: left;"&gt;
+    &lt;h1&gt;THE END&lt;/h1&gt;
+    &lt;p&gt;
+        - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
+        - &lt;a href="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/section&gt;</t>
 </tnodes>
 </leo_file>
