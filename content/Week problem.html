@@ -139,11 +139,198 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='blog.html'>Next</a> >> blog<br /><h1>About</h1>
-<p>本學期主要使用軟體:<br/>NX1980<br/>-&gt;參考與下載網址:<a href="https://mde.tw/cd2022/content/NX1980.html">cd2022 (mde.tw)</a> (只允許使用校用帳戶或是連線至主機下載)</p>
-<p>Github倉儲</p>
-<p>-&gt;mdecourse cmsimde:<a href="https://github.com/mdecourse/cmsimde" itemprop="name codeRepository">cmsimde</a><span> </span></p>
-<br /> <a href='blog.html'>Next</a> >> blog</div>
+    <div id="tipue_search_content">Rep create << <a href='Rep create.html'>Previous</a> <a href='NX 小組作業.html'>Next</a> >> NX 小組作業<br /><h1>Week problem</h1>
+<p><em>w1<br/></em>在IPV4下的網路流量無法滿足全教室的學生使用，必須切換成IPV6才足夠<br/>將老師設定的啟動檔以.bat形式執行<br/><a href="https://github.com/mdecourse/wcm2022/discussions/2">CADLab 中的 IPv6 網路設定 · Discussion #2 · mdecourse/wcm2022 · GitHub<br/></a>以訪指惡意病毒向外傳輸數據<br/><br/></p>
+<p><em>w2</em></p>
+<p>學校電腦因主控在老師的電腦，無法使用"管理員執行".bat，使上述的執行檔無法完全使用</p>
+<p><em>w3</em></p>
+<p>NX1980 .bat檔在IPV6下需要加入PROXY指令</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set HTTP_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128
+set HTTPS_PROXY = http://kmolab:kmolab10@[2001:288:6004:17::42]:3128</pre>
+<p><br/><br/>並且在連上主機端需要使用"::37"主機</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set SPLM_LICENSE_SERVER=28000@[2001:288:6004:17::37]</pre>
+<p><em>w7</em></p>
+<p>1.git clone <a href="https://github.com/mdecourse/scarysim.git">https://github.com/mdecourse/scarysim.git</a><br/>2.修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU<br/>3.cd scarysim<br/>4.qmake -o Makefile scarysim.pro<br/>5.mingw32-make -f Makefile.Release 可以在 release 目錄取得 scarysim.exe<br/>6.將scarysim.exe,ase.obj, arm1.obj, arm2.obj, arm3.obj拉至coppeliasim410_msys2<br/>7.啟用scarysim.exe<br/><img alt="" height="257" src="./../images/110-2W7.png" width="457"/></p>
+<p><em></em></p>
+<p><em>w10</em></p>
+<p><em>(nx_block_ui)</em></p>
+<p>主要學習如何使用NXUI改變零件尺寸，配合python更改參數</p>
+<p>實作檔案:<a href="https://drive.google.com/file/d/159vBG7LADoOkyi9QE4BbgQvud6cdSjzU/view?usp=sharing">w10_block_ui</a></p>
+<p>以下是操作影片</p>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w10_block_ui.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p><em>w12</em></p>
+<p>1.cadlab startup</p>
+<script>
+var winkVideoData2 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass2" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w12_cadlab_startup.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p></p>
+<p>2.NXOpen Python</p>
+<script>
+var winkVideoData3 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass3" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w12-nxfilebar.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p></p>
+<script>
+var winkVideoData4 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass4" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w12_task2.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p><em>w13(coppeliasim python操作)</em></p>
+<p>1.將coppeliasim加入啟動檔啟動程序</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">path=%Path%;C:\CoppeliaSimEdu_4.3.0_rev3
+start /D C:\CoppeliaSimEdu_4.3.0_rev3 coppeliasim.exe</pre>
+<p>start後面要依照放置槽區設定<br/>2.操作步驟<br/>(少一步驟&gt;在user.txt&gt;executeUnsafe改為true)</p>
+<script>
+var winkVideoData5 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass5" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/22W13-copp.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p><em>w14</em></p>
+<p>本週是對手臂進行 pyhton修改(自動&lt;-&gt;手動控制切換)</p>
+<p>操作方式依照影片<br/><br/></p>
+<script>
+var winkVideoData6 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass6" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/22W14-40923128.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p><em>w16</em></p>
+<p>1.thinter</p>
+<p>講解如何使用網路控制coppeliasim之UI介面(以IPV4控制)</p>
+<p>檔案(mde.tw):<a href="https://mde.tw/cd2022_guide/downloads/w15_uarm_tkinter_control.7z">https://mde.tw/cd2022_guide/downloads/w15_uarm_tkinter_control.7z</a> </p>
+<p></p>
+<script>
+var winkVideoDataw16-1 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClassw16-1" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/22-w16-thinter-28.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p></p>
+<br />Rep create << <a href='Rep create.html'>Previous</a> <a href='NX 小組作業.html'>Next</a> >> NX 小組作業</div>
         
     <!-- footer -->
       <div class="container">
