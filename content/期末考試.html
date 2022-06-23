@@ -139,21 +139,182 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">AGX REPO(W4) << <a href='AGX REPO(W4).html'>Previous</a> <a href='Week problem.html'>Next</a> >> Week problem<br /><h1>Rep create</h1>
-<p>參考資料<br/>cmsimde rep:<br/><a href="https://github.com/mdecourse/cmsimde">mdecourse/cmsimde: cmsimde main scripts (github.com)</a></p>
-<p>參考步驟:<br/><a href="http://mde.tw/cd2022_guide/content/index.html">CD_Guide (mde.tw)</a><br/><br/></p>
-<p>Step:<br/>1.Create a "cd2022" rep on github</p>
-<p>2.勾選"<span>Add .gitignore" and 選擇 python</span></p>
-<p>3.git clone rep to USB (on cmd)</p>
-<p>4. 進入cd2022 倉儲</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cd cd2022
+    <div id="tipue_search_content">BLogsetting << <a href='BLogsetting.html'>Previous</a> <br /><h1>期末考試</h1>
+<p>4.以一般UI介面來控制手臂</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/KQNJMNWeB1I" width="560"></iframe></p>
+<p>底座之python UI程式:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">function closeEventHandler(h)
+    sim.addLog(sim.verbosity_scriptinfos,'Window '..h..' is closing...')
+    simUI.hide(h)
+end
+
+function joint1_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta1 set to '..newVal)
+    sim.setJointTargetPosition(joint1, newVal*deg)
+end
+
+function joint2_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta2 set to '..newVal)
+    sim.setJointTargetPosition(joint2, newVal*deg)
+end
+
+function joint3_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta3 set to '..newVal)
+    sim.setJointTargetPosition(joint3, newVal*deg)
+end
+
+function joint16_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta16 set to '..newVal)
+    sim.setJointTargetPosition(joint16, newVal*deg)
+    sim.setJointTargetPosition(joint20, -newVal*deg)
+end
+
+function sysCall_init()
+    -- do some initialization here
+    simRemoteApi.start(19999)
+    joint1 = sim.getObject('/joint1')
+    joint2 = sim.getObject('/joint2')
+    joint3 = sim.getObject('/joint3')
+    i = 0
+    deg = math.pi/180
+    print(i)
+    xml = [[
+&lt;ui closeable="true" on-close="closeEventHandler" resizable="true"&gt;
+    &lt;label text="This is a demo of the CustomUI plugin. Browse through the tabs below to explore all the widgets that can be created with the plugin." wordwrap="true" /&gt;
+    &lt;tabs&gt;
+        &lt;tab title="Numeric"&gt;a
+            &lt;label text="Sliders can be oriented horizontally or vertically, and have optional properties that can be set (in the XML) such as minimum and maximum value." wordwrap="true" /&gt;
+            &lt;label text="" id="3000" wordwrap="true" /&gt;
+            &lt;label text="theta1" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="0" maximum="360" on-change="joint1_rotate" /&gt;
+            &lt;label text="theta2" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="-80" maximum="30" on-change="joint2_rotate" /&gt;
+            &lt;label text="theta3" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="-30" maximum="50" on-change="joint3_rotate" /&gt;
+        &lt;/tab&gt;
+    &lt;/tabs&gt;
+&lt;/ui&gt;
+]]
+    ui=simUI.create(xml)
+    
+end
+
+function sysCall_actuation()
+
+
+end
+
+function sysCall_sensing()
+    -- put your sensing code here
+end
+
+function sysCall_cleanup()
+    -- do some clean-up here
+end
+
+-- See the user manual or the available code snippets for additional callback functions and details
 </pre>
-<p>5.擷取cmsimde檔案 (尾部檔名可不打)</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git submodule add https://github.com/mdecourse/cmsimde.git (cmsimde)</pre>
-<p>6.將/up_dir內的資料全部複製到/cd2022 (保留原始的.gitgnore)</p>
-<p>7.進去https更改倉儲標題，並gemerate_page</p>
-<p>8.acp 上傳檔案</p>
-<br />AGX REPO(W4) << <a href='AGX REPO(W4).html'>Previous</a> <a href='Week problem.html'>Next</a> >> Week problem</div>
+<p></p>
+<p>心得:途中遇到UI沒辦法正常轉動(無法控制)，後面發現Dummy設錯和一些零件做動沒有打開，導致整個零件會亂轉，解決之後就正常了</p>
+<p>5.用Uarm萊吸起方塊</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/8X5_UdQV2iw" width="560"></iframe></p>
+<p>心得:因為原本手臂比較不好操作，所以本組最後決定把方塊稍微變大讓手筆比較好吸到物件，但是軸的力量一開始只考慮到本體，導致方塊吸起來後比較沒有利舉起來。</p>
+<p>6.使用API來連線遠端操作</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/i4JF0Jgyzoc" width="560"></iframe>心得:因為從控制台的IPV4之IP基本指連內無法順利連外，所以利用第三方連線軟件hamach作為雙方IPV4橋梁，由影片看出從不同電腦來控制機械手臂。</p>
+<p>使用的python程式為利用W16之"uarm_tkinter_control.py"</p>
+<p>並將第61行的IP改為連線HA對方IP</p>
+<p>本組利用程式:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
+Original Author: Marks Calderon Niquin
+Email: markscalderonniquin@gmail.com
+github: hypagetech
+Program modified to control uarm robot on CoppeliaSim through sliders GUI with TKinter
+'''
+from tkinter import *
+from tkinter import messagebox
+import sim
+import time
+import math
+
+root = Tk()
+
+class GUI(Frame):
+    scales_l = []
+    labels_l = []
+    handles = []
+    boolConnect = False
+    clientID = -1
+    base = 'joint'
+    final = 'tip'
+
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        #sim.simxFinish(-1) #clean all ports
+
+    def initUI(self):
+        self.master.title("uArm Robot control")
+        # 這裡需要配合各 joint 的轉動範圍角度調整 slider 移動範圍
+        for i in range(3):
+            tit = "Joint"+str(i+1)
+            w_label = Label(self.master, text=tit).grid(row=i, column=0, pady=4, padx = 4)
+            win = Scale(self.master, from_=-180, to=180, tickinterval= 30, orient=HORIZONTAL, resolution=1, length=450, command=lambda value, name=i: self.onScale(name, value))
+            win.set(0)
+            win.grid(row=i, column=1)
+
+            self.scales_l.append(win)
+            self.labels_l.append(w_label)
+
+        self.conectar = Button(self.master, text ="To connect", command = self.onConnect)
+        self.conectar.grid(row=8,column=1)
+
+    def onScale(self, name,value):
+        if(self.clientID != -1):
+            print("{} : {}".format(name, value))
+            obj = self.handles[int(name)]
+            ang = float(value)*math.pi/180
+            sim.simxSetJointTargetPosition(self.clientID, obj ,ang ,sim.simx_opmode_oneshot)
+            #print(self.objFinal)
+            #pos = sim.simxGetObjectPosition(self.clientID, self.objFinal, -1, sim.simx_opmode_streaming )
+            #print(pos)
+
+
+
+    def onConnect(self):
+        if self.clientID != -1:
+            return
+            
+        self.clientID = sim.simxStart('25.58.150.176',19999,True,True,5000,5) # Connect to CoppeliaSim
+        if self.clientID == -1:
+            messagebox.showinfo( "Can not be connected")
+        else:
+
+            for i in range(3):
+                j = i + 1
+                nom = self.base + str(j)
+                _, handle=sim.simxGetObjectHandle(self.clientID, nom, sim.simx_opmode_oneshot_wait)
+                self.handles.append(handle)
+            self.objFinal = sim.simxGetObjectHandle(self.clientID, 'joint3', sim.simx_opmode_oneshot_wait)
+            print(self.objFinal)
+            time.sleep(1)
+            print("Connected and send command to the motor")
+
+def close_window():
+  print("Close all ports")
+  sim.simxFinish(-1) #clean all ports
+  root.destroy()
+
+def main():
+    root.protocol("WM_DELETE_WINDOW", close_window)
+    ex = GUI()
+    root.geometry("500x500")
+    root.mainloop()
+
+
+if __name__ == '__main__':
+    main()
+</pre>
+<p></p><br />BLogsetting << <a href='BLogsetting.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
