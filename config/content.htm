@@ -781,6 +781,55 @@ var winkVideoData = {
 <p></p>
 <p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 8e43c7bd2ae62330e54e328e9cdd3e5b01cdd087</p>
 <h1>期末考試</h1>
+<p>1.已將NX檔案放置cd2022/downloads/w18/uarm</p>
+<p>2.NX零件改編</p>
+<p>因為有些零件無法直接在整體的組合圖上鏡射，所以必自行去做更動最後再把零件重組</p>
+<p>以下為個人操作步驟:</p>
+<script>
+var winkVideoDataw182= {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClassw182" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w18-1 lest teat.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p>3.在coppeliasim組合作動</p>
+<p>主要是小心dummy為了使一些零件會重複利用但又不用複製，以dummy來再次連接需要連接的零件</p>
+<p>以下為操作步驟:</p>
+<script>
+var winkVideoDataw183= {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClassw183" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="648" muted="ture" video="" width="1152">
+<source src="./../downloads/w18 lest teat.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+</div>
+</div>
 <p>4.以一般UI介面來控制手臂</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/KQNJMNWeB1I" width="560"></iframe></p>
 <p>底座之python UI程式:</p>
@@ -859,7 +908,7 @@ end
 <p>心得:途中遇到UI沒辦法正常轉動(無法控制)，後面發現Dummy設錯和一些零件做動沒有打開，導致整個零件會亂轉，解決之後就正常了</p>
 <p>5.用Uarm萊吸起方塊</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/8X5_UdQV2iw" width="560"></iframe></p>
-<p>心得:因為原本手臂比較不好操作，所以本組最後決定把方塊稍微變大讓手筆比較好吸到物件，但是軸的力量一開始只考慮到本體，導致方塊吸起來後比較沒有利舉起來。</p>
+<p>心得:因為原本手臂比較不好操作，所以本組最後決定把方塊稍微變大讓手臂比較好吸到物件，但是軸的力量一開始只考慮到本體，導致方塊吸起來後比較沒有利舉起來。</p>
 <p>6.使用API來連線遠端操作</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/i4JF0Jgyzoc" width="560"></iframe>心得:因為從控制台的IPV4之IP基本指連內無法順利連外，所以利用第三方連線軟件hamach作為雙方IPV4橋梁，由影片看出從不同電腦來控制機械手臂。</p>
 <p>使用的python程式為利用W16之"uarm_tkinter_control.py"</p>
